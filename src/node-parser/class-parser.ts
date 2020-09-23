@@ -110,6 +110,24 @@ export function parseCtorParams(
     });
 }
 
+function parsePropertyDecorators(node: any): string[] {
+    if (isPropertyDeclaration(node)) {
+        let decoratorNames: string[] = [];
+        if (node.decorators && node.decorators.length > 0) {
+            for (const decorator of node.decorators) {
+                let expression = (decorator.expression as any);
+                let decoratorString = expression.expression.text;
+                if (expression.arguments && expression.arguments.length > 0) {
+                    decoratorString += '(' + expression.arguments.map((a : any) => a.text).join(',') + ')';
+                }
+                decoratorNames.push(decoratorString);
+            }
+        }
+        return decoratorNames;
+    }
+    return [];
+}
+
 /**
  * Parses a class node into its declaration. Calculates the properties, constructors and methods of the class.
  *
@@ -134,6 +152,8 @@ export function parseClass(tsResource: Resource, node: ClassDeclaration): void {
         node.members.forEach((o) => {
             if (isPropertyDeclaration(o)) {
                 const actualCount = classDeclaration.properties.length;
+                const decorators = parsePropertyDecorators(o);
+
                 if (o.modifiers) {
                     classDeclaration.properties.push(
                         new TshProperty(
@@ -144,6 +164,7 @@ export function parseClass(tsResource: Resource, node: ClassDeclaration): void {
                             containsModifier(o, SyntaxKind.StaticKeyword),
                             o.getStart(),
                             o.getEnd(),
+                            decorators
                         ),
                     );
                 }
@@ -157,6 +178,7 @@ export function parseClass(tsResource: Resource, node: ClassDeclaration): void {
                             containsModifier(o, SyntaxKind.StaticKeyword),
                             o.getStart(),
                             o.getEnd(),
+                            decorators
                         ),
                     );
                 }

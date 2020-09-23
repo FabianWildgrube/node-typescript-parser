@@ -18,5 +18,6 @@ export class PropertyDeclaration implements OptionalDeclaration, ScopedDeclarati
         public isStatic: boolean,
         public start?: number,
         public end?: number,
+        public decorators?: string[],
     ) { }
 }
