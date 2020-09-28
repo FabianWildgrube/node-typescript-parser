@@ -1,0 +1,1 @@
+{"version":3,"file":"SymbolSpecifier.js","sourceRoot":"","sources":["../src/SymbolSpecifier.ts"],"names":[],"mappings":";;;AAEA;;;;;;;GAOG;AACH,MAAa,eAAe;IACxB,YAAmB,SAAiB,EAAS,KAAc;QAAxC,cAAS,GAAT,SAAS,CAAQ;QAAS,UAAK,GAAL,KAAK,CAAS;IAAI,CAAC;IAEhE;;;;;;OAMG;IACI,KAAK;QACR,OAAO,IAAI,eAAe,CAAC,IAAI,CAAC,SAAS,EAAE,IAAI,CAAC,KAAK,CAAC,CAAC;IAC3D,CAAC;CACJ;AAbD,0CAaC"}

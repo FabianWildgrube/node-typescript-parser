@@ -1,0 +1,1 @@
+{"version":3,"file":"namespaceImport.js","sourceRoot":"","sources":["../../../src/code-generators/typescript-generators/namespaceImport.ts"],"names":[],"mappings":";;;AAGA;;;;;;;GAOG;AACH,SAAgB,uBAAuB,CACnC,GAAoB,EACpB,EAAE,gBAAgB,EAAE,GAAG,EAA+B;IAEtD,OAAO,eAAe,GAAG,CAAC,KAAK,SAAS,gBAAgB,GAAG,GAAG,CAAC,WAAW,GAAG,gBAAgB,GAAG,GAAG,EAAE,CAAC;AAC1G,CAAC;AALD,0DAKC"}
