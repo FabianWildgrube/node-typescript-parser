@@ -1,1 +1,0 @@
-{"version":3,"file":"externalModuleImport.js","sourceRoot":"","sources":["../../../src/code-generators/typescript-generators/externalModuleImport.ts"],"names":[],"mappings":";;;AAGA;;;;;;;GAOG;AACH,SAAgB,4BAA4B,CACxC,GAAyB,EACzB,EAAE,gBAAgB,EAAE,GAAG,EAA+B;IAEtD,OAAO,UAAU,GAAG,CAAC,KAAK,cAAc,gBAAgB,GAAG,GAAG,CAAC,WAAW,GAAG,gBAAgB,IAAI,GAAG,EAAE,CAAC;AAC3G,CAAC;AALD,oEAKC"}

@@ -2,8 +2,8 @@
   "name": "typescript-parser",
   "version": "0.0.0-development",
   "description": "Parser for typescript (and javascript) files, that compiles those files and generates a human understandable AST.",
-  "main": "build/index.js",
-  "typings": "build/index.d.ts",
+  "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "build": "npm run clean && tsc -p ./config/tsconfig.build.json",
     "clean": "del-cli ./build ./coverage",
