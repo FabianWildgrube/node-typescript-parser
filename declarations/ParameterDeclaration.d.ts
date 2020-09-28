@@ -19,8 +19,10 @@ export declare class BoundParameterDeclaration extends ParameterDeclaration {
     private endCharacter;
     parameters: ParameterDeclaration[];
     typeReference: string | undefined;
+    // @ts-ignore
     get name(): string;
     set name(_: string);
+    // @ts-ignore
     get type(): string;
     set type(_: string);
     constructor(startCharacter: string, endCharacter: string, start?: number, end?: number);
