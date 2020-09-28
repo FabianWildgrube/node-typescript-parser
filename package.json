@@ -13,7 +13,7 @@
     "test:watch": "npm run clean && jest -c ./jest.json --watch --no-coverage",
     "typedoc": "del-cli ./docs && typedoc --ignoreCompilerErrors --out ./docs --mode file --tsconfig ./config/tsconfig.build.json ./src/",
     "semantic-release": "semantic-release",
-    "postinstall": "tsc --outDir ./build"
+    "prepack": "tsc --outDir ./build"
   },
   "repository": {
     "type": "git",
