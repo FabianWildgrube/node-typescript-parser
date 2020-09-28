@@ -1,3 +1,11 @@
+# Fork of node-typescript-parser
+This fork adds that the decorators of properties of a class are now also analyzed and added to the AST that node-typescript-parser creates.
+
+To ensure that this fork can be used as a npm dependency directly from github, make sure to run npm build and commit the built resources for every code update!
+
+The following is the original project description:
+
+
 # node typescript parser
 
 This package is a TypeScript and ECMAScript parser. It uses the underlying typescript parser to generate

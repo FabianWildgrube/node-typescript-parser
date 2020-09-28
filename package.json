@@ -1,5 +1,5 @@
 {
-  "name": "typescript-parser",
+  "name": "typescript-parser-with-decorators",
   "version": "0.0.0-development",
   "description": "Parser for typescript (and javascript) files, that compiles those files and generates a human understandable AST.",
   "main": "index.js",
